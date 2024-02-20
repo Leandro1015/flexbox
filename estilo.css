@@ -19,14 +19,14 @@ header {
 
 header h1 {
   margin: 0;
-  font-size: 2em;
 }
 
 nav {
   width: 100%;
   background-color: #613613;
   color: white;
-  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
   padding: 10px 0;
 }
 
@@ -40,8 +40,6 @@ main {
   flex: 1;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: flex-start;
   gap: 20px;
   padding: 20px;
   max-width: 1200px;
@@ -56,42 +54,25 @@ main div {
   flex: 1;
   min-width: 250px;
   border-radius: 10px;
-  flex-wrap: wrap;
-  flex-flow: column wrap;
-  justify-content: space-around;
-  align-items: center;
-  align-content: center;
-  gap: 10px;
   align-self: center;
-  order: 1;
 }
 
 #ejemplo1 {
-  justify-content: space-around;
+  flex-grow: 3;
 }
 
 #ejemplo2 {
-  justify-content: space-between;
-}
-
-#ejemplo3 {
-  align-items: flex-end;
-}
-
-#ejemplo4 {
-  align-content: space-between;
+  flex-grow: 2;
 }
 
 #ejemplo5 {
-  flex-direction: row-reverse;
-  justify-content: center;
-  align-items: center;
+  order: 1;
 }
 
 #ejemplo6 {
   align-self: flex-end;
 }
 
-#ejemplo7 {
-  flex: none;
+#ejemplo9 {
+  flex-grow: 2;
 }
